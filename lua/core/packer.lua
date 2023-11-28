@@ -17,6 +17,11 @@ return require('packer').startup(function(use)
   use 'nvim-tree/nvim-web-devicons'
   use { "catppuccin/nvim", as = "catppuccin" }
   use 'nvim-lualine/lualine.nvim'
+  use 'nvim-treesitter/nvim-treesitter'
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.4',
+    dependencies = { 'nvim-lua/plenary.nvim' }
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
