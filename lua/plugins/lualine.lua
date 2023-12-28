@@ -1,8 +1,7 @@
 return {
-	"nvim-lualine/lualine.nvim",
-	config = function ()
-		options = {
-			theme = "everforest"
-		}
-	end
+  'nvim-lualine/lualine.nvim',
+  dependencies = { 'nvim-tree/nvim-web-devicons' },
+  opts = {
+    theme = "everforest"
+  }
 }
