@@ -15,7 +15,7 @@ return {
           -- javascript ecosystem
           "tsserver", "svelte", "vuels", "astro",
           -- others
-          "lua_ls", "pyright", "zls", "rust_analyzer",
+          "lua_ls", "pyright", "zls",
         }
       })
     end
@@ -40,11 +40,6 @@ return {
       lspconfig.lua_ls.setup({})
       lspconfig.pyright.setup({})
       lspconfig.zls.setup({})
-      lspconfig.rust_analyzer.setup({
-        settings = {
-          ["rust-analyzer"] = {},
-        }
-      })
 
       -- Key bindings 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
