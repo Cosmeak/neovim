@@ -21,7 +21,7 @@ return {
     }
   },
   keys = {
-    { "<leader>n", "<cmd>Neotree filesystem reveal left<cr>", desc = "Show Neotree on left" } 
+    { "<leader>n", "<cmd>Neotree toggle left<cr>", desc = "Toogle Neotree on the left side<D-s>" }
   },
   config = function(_, opts)
     require("neo-tree").setup(opts)
